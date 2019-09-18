@@ -28,7 +28,7 @@ const service = () => (
                     <h1 className="title is-4 is-spaced has-text-center">
                       Primary Care
                     </h1>
-                    <h5 className="subtitle is-6 has-text-weight-normal is-family-sans-serif has-text-center is-spaced">
+                    <h5 className="subtitle is-6 has-text-weight-normal is-family-sans-serif has-text-center is-spaced ">
                       An so regular to on points wanted rapture ous resolving
                       continued household
                     </h5>

@@ -5,6 +5,9 @@ import Seo from '../components/Seo';
 import Service from '../components/Service';
 import Header from '../components/Header';
 import Layout from '../components/Layout';
+import Text from '../components/Text';
+import Image from '../components/Image';
+import Text2 from '../components/Text2';
 
 const Wrapper = styled.div`
   .section {
@@ -32,14 +35,14 @@ export default class IndexPage extends React.Component {
           <section className="section">
             <div className="container">
               <div className="columns">
-                <div className="column is-half">
+                <div className="column is-half is-size-1-touch">
                   <section className="hero is-medium">
                     <div className="hero-body">
-                      <div className="container">
-                        <h1 className="title  is-1 is-spaced">
+                      <div className="container is-size-1-touch">
+                        <h1 className="title  is-1 is-spaced is-size-1-touch">
                           Making Health Care Better Together
                         </h1>
-                        <h5 className="subtitle is-6 has-text-weight-normal is-family-sans-serif has-text-left">
+                        <h5 className="subtitle is-6 has-text-weight-normal is-family-sans-serif has-text-left is-hidden-touch">
                           Also you dry creeping beast multiply fourth abundantly
                           our itself signs bring our. Won form living. Whose dry
                           you seasons divide given gathering great in whose
@@ -68,6 +71,9 @@ export default class IndexPage extends React.Component {
           </section>
         </Wrapper>
         <Service />
+        <Text />
+        <Image />
+        <Text2 />
       </Layout>
     );
   }
