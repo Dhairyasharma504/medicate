@@ -5,8 +5,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 
 const Container = styled.div`
-  margin-top: 2rem;
-  margin: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
   text-align: center;
   h1 {
