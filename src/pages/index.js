@@ -2,40 +2,73 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Seo from '../components/Seo';
+import Service from '../components/Service';
+import Header from '../components/Header';
 import Layout from '../components/Layout';
 
-const Container = styled.div`
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  text-align: center;
-  h1 {
-    color: ${props => props.theme.mainBrandColor} !important;
-  }
-  .main {
-    min-height: 800px;
+const Wrapper = styled.div`
+  .section {
     background-image: url(https://colorlib.com/preview/theme/medcare/img/banner/home-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
+    position: center;
+  }
+  h1 {
+    color: ${props => props.theme.mainBrandColor} !important;
+  }
+  h5 {
+    color: ${props => props.theme.lightShades} !important;
   }
 `;
 
 export default class IndexPage extends React.Component {
   render() {
     return (
-      <div className="main">
-        <Layout>
-          <Seo title="Home" description="Welcome to GatsbyJs v1" />
+      <Layout>
+        <Seo title="Home" description="Welcome to GatsbyJs v1" />
+        <Wrapper>
+          <Header />
           <section className="section">
-            <Container className="container">
-              <h1 className="title">Hi people</h1>
-              <p>Welcome to your new Gatsby site.</p>
-              <p>Now go build something great.</p>
-            </Container>
+            <div className="container">
+              <div className="columns">
+                <div className="column is-half">
+                  <section className="hero is-medium">
+                    <div className="hero-body">
+                      <div className="container">
+                        <h1 className="title  is-1 is-spaced">
+                          Making Health Care Better Together
+                        </h1>
+                        <h5 className="subtitle is-6 has-text-weight-normal is-family-sans-serif has-text-left">
+                          Also you dry creeping beast multiply fourth abundantly
+                          our itself signs bring our. Won form living. Whose dry
+                          you seasons divide given gathering great in whose
+                          you'll greater let livein form beast sinthete better
+                          together these place absolute right. Make An
+                          Appointment
+                        </h5>
+                      </div>
+
+                      <a className="button is-info is-outlined is-medium">
+                        View Department
+                      </a>
+
+                      <div className="field is-grouped">
+                        <p className="control">
+                          <a className="button is-link is-medium">
+                            Save changes
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
           </section>
-        </Layout>
-      </div>
+        </Wrapper>
+        <Service />
+      </Layout>
     );
   }
 }
