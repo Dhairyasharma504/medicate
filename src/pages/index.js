@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 
 const Container = styled.div`
   margin-top: 2rem;
+  margin: 2rem;
   margin-bottom: 4rem;
   text-align: center;
   h1 {
