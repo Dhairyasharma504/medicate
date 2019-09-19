@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import Seo from '../components/Seo';
 import Service from '../components/Service';
 import Header from '../components/Header';
@@ -8,9 +7,10 @@ import Layout from '../components/Layout';
 import Text from '../components/Text';
 import Image from '../components/Image';
 import Text2 from '../components/Text2';
+import Footer from'../components/Footer';
 
 const Wrapper = styled.div`
-  .section {
+  .main {
     background-image: url(https://colorlib.com/preview/theme/medcare/img/banner/home-banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -31,8 +31,8 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Seo title="Home" description="Welcome to GatsbyJs v1" />
         <Wrapper>
-          <Header />
-          <section className="section">
+          <div className="main">
+            <Header />
             <div className="container">
               <div className="columns">
                 <div className="column is-half is-size-1-touch">
@@ -46,34 +46,43 @@ export default class IndexPage extends React.Component {
                           Also you dry creeping beast multiply fourth abundantly
                           our itself signs bring our. Won form living. Whose dry
                           you seasons divide given gathering great in whose
-                          you'll greater let livein form beast sinthete better
-                          together these place absolute right. Make An
-                          Appointment
+                          greater let livein form beast sinthete better together
+                          these place absolute right. Make An Appointment
                         </h5>
                       </div>
 
-                      <a className="button is-info is-outlined is-medium">
-                        View Department
-                      </a>
-
-                      <div className="field is-grouped">
-                        <p className="control">
-                          <a className="button is-link is-medium">
-                            Save changes
-                          </a>
-                        </p>
+                      <div className="tags are-medium">
+                        <span>
+                          <section className="section">
+                            <a className="button is-info is-outlined is-medium">
+                              Make An Appointment
+                            </a>
+                          </section>
+                        </span>
+                        <span>
+                          <p className="control">
+                            <a href="#">
+                              <button
+                                type="submit"
+                                className="button is-secondary is-medium is-info is-hidden-touch ">
+                                View Department
+                              </button>
+                            </a>
+                          </p>
+                        </span>
                       </div>
                     </div>
                   </section>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </Wrapper>
         <Service />
         <Text />
         <Image />
         <Text2 />
+        <Footer/>
       </Layout>
     );
   }

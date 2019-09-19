@@ -11,6 +11,8 @@ const Wrapper = styled.div`
     margin-top: 2rem;
     padding-inline-start: 4rem;
   }
+  .card-header {
+  }
 `;
 const Text = () => (
   <Wrapper>

@@ -31,10 +31,10 @@ const Section = styled.section`
     }
   }
   .navbar-burger {
-    background-color: #1c1323;
+    background-color: #0052d2;
     color: #fff;
     opacity: 0.6;
-    border-radius: 4px;
+    border-radius: 8px;
   }
 `;
 
@@ -62,12 +62,15 @@ export default class Header extends React.Component {
       <Section className="section">
         <div className="container">
           <nav
-            className="navbar"
+            className="navbar is-fixed"
             role="navigation"
             aria-label="main navigation">
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+                <img
+                  src="https://colorlib.com/preview/theme/medcare/img/logo.png"
+                  alt="site logo"
+                />
               </Link>
               <a
                 href="#"
@@ -87,7 +90,7 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
+              <div className="navbar-end">
                 <Link to="/" className="navbar-item">
                   Home
                 </Link>

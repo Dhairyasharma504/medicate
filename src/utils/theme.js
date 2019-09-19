@@ -12,7 +12,7 @@ export const theme = {
   mainBrandColor,
   // Accent colors can be used to bring attention to design elements
   // by contrasting with the rest of the palette.
-  lightAccent: '#FFDC57',
+  lightAccent: '#FFFFFF',
   // Use this color as the background for your dark-on-light designs,
   // or the text color of an inverted design.
   lightShades,
@@ -75,11 +75,12 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   .button.is-secondary {
-    background-color: ${theme.lightAccent};
+    background-color: ${theme.darkAccent};
     transition: background-color 0.2s ease;
     color: #ffffff;
     :hover {
       background-color: ${darken(0.06, theme.lightAccent)};
+      color: #3f51b5
     }
   }
   .button.is-link {
