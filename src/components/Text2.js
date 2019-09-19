@@ -33,7 +33,9 @@ const Text2 = () => (
                   </figure>
                   <div className="container">
                     <section className="section">
-                      <h1 className="title">Dr Adam Brain</h1>
+                      <h1 className="title is-4 has-text-centered">
+                        Dr Adam Brain
+                      </h1>
                       <h2 className="subtitle">Subtitle</h2>
                     </section>
                   </div>
@@ -46,7 +48,9 @@ const Text2 = () => (
                   </figure>
                   <div className="container">
                     <section className="section">
-                      <h1 className="title">Title</h1>
+                      <h1 className="title is-4 has-text-centered">
+                        Dr Blian Judge
+                      </h1>
                       <h2 className="subtitle">Subtitle</h2>
                     </section>
                   </div>
@@ -59,7 +63,9 @@ const Text2 = () => (
                   </figure>
                   <div className="container">
                     <section className="section">
-                      <h1 className="title">Title</h1>
+                      <h1 className="title is-4 has-text-centered">
+                        Dr Blian Judge
+                      </h1>
                       <h2 className="subtitle">Subtitle</h2>
                     </section>
                   </div>
