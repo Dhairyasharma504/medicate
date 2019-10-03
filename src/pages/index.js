@@ -7,7 +7,8 @@ import Layout from '../components/Layout';
 import Text from '../components/Text';
 import Image from '../components/Image';
 import Text2 from '../components/Text2';
-import Footer from'../components/Footer';
+import Footer from '../components/Footer';
+import Phone from '../components/Phone';
 
 const Wrapper = styled.div`
   .main {
@@ -82,7 +83,8 @@ export default class IndexPage extends React.Component {
         <Text />
         <Image />
         <Text2 />
-        <Footer/>
+        <Phone />
+        <Footer />
       </Layout>
     );
   }

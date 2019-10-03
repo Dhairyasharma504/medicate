@@ -14,6 +14,9 @@ const Wrapper = styled.div`
   h5 {
     color: ${props => props.theme.lightShades} !important;
   }
+  .ted {
+    margin-right: 15px;
+  }
 `;
 const service = () => (
   <Wrapper>
@@ -37,13 +40,11 @@ const service = () => (
             <div className="column">
               <div className="card">
                 <div className="card-content">
-                  <span>
-                    <i className="fas fa-heartbeat" />
-                  </span>
-
-                  <h1 className="title is-4 is-spaced has-text-center">
-                    <span> Emergency Cases</span>
+                  <h1 className="title is-4 has-text-center is-spaced">
+                    <i className="fas fa-heartbeat ted" />
+                    Emergency Cases
                   </h1>
+
                   <h5 className="subtitle is-6 has-text-weight-normal is-family-sans-serif has-text-center is-spaced">
                     An so regular to on points wanted rapture ous resolving
                     continued household
